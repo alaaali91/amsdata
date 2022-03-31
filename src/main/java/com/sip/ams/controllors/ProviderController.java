@@ -90,7 +90,9 @@ public class ProviderController {
 
 	@PostMapping("update")
 	public String updateProvider(@Valid Provider provider, BindingResult result, Model model) {
-
+		if (result.hasErrors()) {
+			return "provider/addProvider";
+		}
 		providerRepository.save(provider);
 		return "redirect:list";
 
