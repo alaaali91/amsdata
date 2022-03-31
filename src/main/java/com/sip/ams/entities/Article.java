@@ -1,5 +1,6 @@
 package com.sip.ams.entities;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -77,4 +78,5 @@ public class Article {
     	this.provider=provider;
     }  
     
+
 }
